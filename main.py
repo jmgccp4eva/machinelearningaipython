@@ -5,6 +5,7 @@ from Associate_Rule_Learning import *
 from Reinforcement_Learning import *
 from NLP import *
 from Artificial_Neural_Network import *
+from Convolutional_Neural_Network import *
 
 def main():
     # simple_linear_regression('Data Directory/simple_linear_regression.csv', 0)
@@ -32,8 +33,10 @@ def main():
 
     # natural_language_processing('Data Directory/Restaurant_Reviews.tsv')
 
-    ann('Data Directory/ann.csv', 3, 2, 2)
+    # ann('Data Directory/ann.csv', 3, 2, 2)
 
+    # NOTE: MUST UNZIP DATASET.ZIP PRIOR TO RUNNING conv_n_n
+    conv_n_n('Data Directory/')
 
 if __name__ == '__main__':
     main()

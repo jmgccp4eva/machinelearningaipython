@@ -7,6 +7,7 @@ from NLP import *
 from Artificial_Neural_Network import *
 from Convolutional_Neural_Network import *
 from Dimensionality_Reduction import *
+from Model_Selection import *
 
 def main():
     # simple_linear_regression('Data Directory/simple_linear_regression.csv', 0)
@@ -41,7 +42,10 @@ def main():
 
     # principal_component_analysis('Data Directory/dimensionality_reduction.csv')
     # linear_discriminant_analysis('Data Directory/dimensionality_reduction.csv')
-    kernel_pca('Data Directory/dimensionality_reduction.csv')
+    # kernel_pca('Data Directory/dimensionality_reduction.csv')
+
+    # k_fold_cross_validation('Data Directory/Social_Network_Ads.csv')
+    k_fold_cross_validation_with_grid_search('Data Directory/Social_Network_Ads.csv')
 
 if __name__ == '__main__':
     main()

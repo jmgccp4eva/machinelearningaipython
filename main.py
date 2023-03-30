@@ -6,6 +6,7 @@ from Reinforcement_Learning import *
 from NLP import *
 from Artificial_Neural_Network import *
 from Convolutional_Neural_Network import *
+from Dimensionality_Reduction import *
 
 def main():
     # simple_linear_regression('Data Directory/simple_linear_regression.csv', 0)
@@ -36,7 +37,11 @@ def main():
     # ann('Data Directory/ann.csv', 3, 2, 2)
 
     # NOTE: MUST UNZIP DATASET.ZIP PRIOR TO RUNNING conv_n_n
-    conv_n_n('Data Directory/')
+    # conv_n_n('Data Directory/')
+
+    # principal_component_analysis('Data Directory/dimensionality_reduction.csv')
+    # linear_discriminant_analysis('Data Directory/dimensionality_reduction.csv')
+    kernel_pca('Data Directory/dimensionality_reduction.csv')
 
 if __name__ == '__main__':
     main()
